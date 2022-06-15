@@ -4,20 +4,20 @@ import random
 #pyfiglet imported to generate nice interface 
 import pyfiglet
 
+def welcome():
+    # Print Welcome message
+    banner = pyfiglet.figlet_format("JunKenPo")
+    print(banner)
 
-# Print Welcome message
-banner = pyfiglet.figlet_format("JunKenPo")
-print(banner)
-
-print("Welcome to JunKenPo\n")
-print("Please chose betwin rock paper and scissors and challenge the Computer !!\n")
-print("Please type only lower case letters Exemple: paper , rock , scissors")
+    print("Welcome to JunKenPo\n")
+    print("Please chose betwin rock paper and scissors and challenge the Computer !!\n")
+    print("Please type only lower case letters Exemple: paper , rock , scissors")
 
 def game():
     """
     Input for the user chose and machine will ramdom chose as well 
     """
-    player = input("the Computer has chosen, It's your turn\n")
+    player = input("The computer has chosen, It's your turn:\n")
     machine = random.choice(['rock', 'paper', 'scissors'])
     
     """
@@ -33,9 +33,7 @@ def game():
         return 'Result is: You win congatulations !!'
     
     return 'Result is: You lost sorry..'
-
-    
-    
+  
 
 def win_game(player1, computer1):
     """
@@ -50,32 +48,29 @@ def win_game(player1, computer1):
                
  
 def play_again():
+    """
+    function to define play again or exit 
+    """
     
     while True:
       continu = input("To play again press'r', to finish press 'q'\n")
       if continu == 'r':
         print(game())
       else:
+          print("Thank you for playng !")
           break
-          
-          
-        
-    
-    
-         
-        
-        
-        
-                 
-   
-# def main():
-#     """
-#     main function that will call all other ones 
-#     Ref love sandwichs prokject 
-#     """                 
-#     game()
-#     play_again()
             
-print(game())
-print(play_again())
+   
+def main():
+    """
+    main function that will call all other ones 
+    Ref love sandwichs project 
+    """                 
+welcome()           
+game()
+play_again()
+      
+
+
+print(main())
    
