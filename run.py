@@ -1,7 +1,9 @@
 #random imported to generate the random value 
 import random
+
 #pyfiglet imported to generate nice interface 
 import pyfiglet
+
 
 # Print Welcome message
 banner = pyfiglet.figlet_format("JunKenPo")
@@ -23,17 +25,17 @@ def game():
     rock beats scissors , scissors beats paper , 
     and paper beats rock 
     """
+             
     if player == machine:
-        return 'Result is: draw'
-        
-    
+        return 'Result is: Draw !'
+              
     if win_game(player, machine):
         return 'Result is: You win congatulations !!'
     
-    return 'Result is: You lost sorry'
+    return 'Result is: You lost sorry..'
+
     
-
-
+    
 
 def win_game(player1, computer1):
     """
@@ -46,7 +48,34 @@ def win_game(player1, computer1):
             or (player1 == 'paper' and computer1 == 'rock'):
                 return True
                
-            
+ 
+def play_again():
+    
+    while True:
+      continu = input("To play again press'r', to finish press 'q'\n")
+      if continu == 'r':
+        print(game())
+      else:
+          break
+          
+          
+        
+    
+    
+         
+        
+        
+        
+                 
+   
+# def main():
+#     """
+#     main function that will call all other ones 
+#     Ref love sandwichs prokject 
+#     """                 
+#     game()
+#     play_again()
             
 print(game())
+print(play_again())
    
