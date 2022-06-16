@@ -19,7 +19,7 @@ The game will tell the player immediatley when win , lose or draw.
 ##Fratures
 ####
 ####Existing Features
-<img alt="Welcome" src="./assets/images/WelcomeScreenshot.jpg" width="80%">
+<img alt="Welcome" src="/assets/images/WelcomeScreenshot.jpg" width="80%">
 
 - Randon computer selection 
   - Once the player choose computer will make a ramdom selection 
@@ -27,37 +27,37 @@ The game will tell the player immediatley when win , lose or draw.
 ####
 - Example when the player win  
 
-<img alt="Win" src="./assets/images/WinScreenshot.jpg" width="80%">
+<img alt="Win" src="/assets/images/WinScreenshot.jpg" width="80%">
 
 ###
 
 - Example when the player lose  
 
-<img alt="Lose" src="./assets/images/LoseScreenshot.jpg" width="80%">
+<img alt="Lose" src="/assets/images/LoseScreenshot.jpg" width="80%">
 
 ###
 
 - Example when the player Draw 
   
 
-<img alt="Draw" src="./assets/images/DrawScreenshot.jpg" width="80%">
+<img alt="Draw" src="/assets/images/DrawScreenshot.jpg" width="80%">
 
 ###
 - Play again 
   - When the game is finished the user will be prompeted to press 'r' to play again or 'q' to exit the game.
 ###
-  <img alt="Draw" src="./assets/images/PlayAgainSceenshot.jpg" width="90%">
+  <img alt="Draw" src="/assets/images/PlayAgainSceenshot.jpg" width="90%">
 
   ####
   - Exit game 
     - once the player press 'q' to exit it will be showed a banner and the game will finish.
     ####
-      <img alt="Draw" src="./assets/images/quitScreenshot.jpg" width="90%">
+      <img alt="Draw" src="/assets/images/quitScreenshot.jpg" width="90%">
 
       ####
 - Input validation and error checking 
   - 1
-<img alt="validation" src="./assets/images/.jpg" width="90%">
+<img alt="validation" src="/assets/images/.jpg" width="90%">
 
 ####
 
