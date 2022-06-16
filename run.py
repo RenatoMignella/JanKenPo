@@ -1,15 +1,15 @@
-#random imported to generate the random value 
+#random imported to generate the random value
 import random
-#pyfiglet imported to generate nice interface 
+#pyfiglet imported to generate nice interface
 import pyfiglet
 
 def welcome():
-    """ Print Welcome message"""
+    """Print Welcome message"""
     
-    banner = pyfiglet.figlet_format("JunKenPo")
+    banner = pyfiglet.figlet_format("JanKenPo")
     print(banner)
 
-    print("Welcome to JunKenPo\n")
+    print("Welcome to JanKenPo\n")
     print("Please choose betweenn rock paper and scissors and challenge the Computer !!\n")
     print("Please type only lower case letters Example: paper , rock , scissors\n")
 
@@ -17,7 +17,7 @@ def game():
     """
     Input for the user chose and machine will ramdom chose as well 
     and Rules: two equals draw rock beats scissors , scissors beats paper , 
-    and paper beats rock 
+    and paper beats rock
     """
     player = input("The computer has chosen, It's your turn:\n")
     machine = random.choice(['rock', 'paper', 'scissors'])
@@ -77,14 +77,14 @@ def play_again():
 #         print(f"invalid data: {e}, please try again .\n")
 #         return False
         
-#     return True   
+#     return True  
     
     
    
 def main():
     """
-    main function that will call all other ones 
-    Ref love sandwichs project 
+    main function that will call all other ones
+    Ref love sandwichs project
     """                 
 welcome()          
 print(game())
