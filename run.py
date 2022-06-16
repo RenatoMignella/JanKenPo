@@ -6,7 +6,7 @@ import pyfiglet
 def welcome():
     """Print Welcome message"""
     
-    banner = pyfiglet.figlet_format("JanKenPo")
+    banner = pyfiglet.figlet_format("JanKenPo.")
     print(banner)
 
     print("Welcome to JanKenPo\n")
