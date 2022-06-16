@@ -27,7 +27,7 @@ The game will tell the player immediatley when win , lose or draw.
 ####
 - Example when the player win  
 
-<img alt="Win" src="/assets/images/WinScreenshot.jpg" width="80%">
+<img alt="Win" src="/assets/images/WinScreenshot.JPG" width="80%">
 
 ###
 
