@@ -61,7 +61,7 @@ The game will tell the player immediatley when win , lose or draw.
 
 ####
 
-###Testing
+### Testing
 
 I have tested the project doing the following
 
