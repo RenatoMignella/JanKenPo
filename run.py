@@ -1,31 +1,27 @@
 #random imported to generate the random value 
 import random
-
 #pyfiglet imported to generate nice interface 
 import pyfiglet
 
 def welcome():
-    # Print Welcome message
+    """ Print Welcome message"""
+    
     banner = pyfiglet.figlet_format("JunKenPo")
     print(banner)
 
     print("Welcome to JunKenPo\n")
-    print("Please chose betwin rock paper and scissors and challenge the Computer !!\n")
-    print("Please type only lower case letters Exemple: paper , rock , scissors")
+    print("Please choose betweenn rock paper and scissors and challenge the Computer !!\n")
+    print("Please type only lower case letters Example: paper , rock , scissors")
 
 def game():
     """
     Input for the user chose and machine will ramdom chose as well 
+    and Rules: two equals draw rock beats scissors , scissors beats paper , 
+    and paper beats rock 
     """
     player = input("The computer has chosen, It's your turn:\n")
     machine = random.choice(['rock', 'paper', 'scissors'])
-    
-    """
-    Rules two equals draw 
-    rock beats scissors , scissors beats paper , 
-    and paper beats rock 
-    """
-             
+                 
     if player == machine:
         return 'Result is: Draw !'
               
@@ -33,7 +29,12 @@ def game():
         return 'Result is: You win congatulations !!'
     
     return 'Result is: You lost sorry..'
-  
+    
+    # while True:
+        
+    #  if validade_input(player):
+    #     print('deu certo')
+    #     break
 
 def win_game(player1, computer1):
     """
@@ -46,7 +47,6 @@ def win_game(player1, computer1):
             or (player1 == 'paper' and computer1 == 'rock'):
                 return True
                
- 
 def play_again():
     """
     function to define play again or exit 
@@ -57,9 +57,29 @@ def play_again():
       if continu == 'r':
         print(game())
       else:
-          print("Thank you for playng !")
+          banner2 = pyfiglet.figlet_format("Thank you for playng !")
+          print(banner2)
           break
+          
             
+# def validade_input(player):
+#     """
+#     this function will validade all awnsers that the use input 
+    
+#     """
+#     try:
+        
+#         if player != 'rock' and player != 'paper' and player !='scissors':
+#            raise ValueError(
+#                 f"you must to type paper , rock or scissors "
+#             )
+#     except ValueError as e:
+#         print(f"invalid data: {e}, please try again .\n")
+#         return False
+        
+#     return True   
+    
+    
    
 def main():
     """
@@ -67,7 +87,7 @@ def main():
     Ref love sandwichs project 
     """                 
 welcome()           
-game()
+print(game())
 play_again()
       
 
