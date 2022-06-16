@@ -11,7 +11,7 @@ def welcome():
 
     print("Welcome to JunKenPo\n")
     print("Please choose betweenn rock paper and scissors and challenge the Computer !!\n")
-    print("Please type only lower case letters Example: paper , rock , scissors")
+    print("Please type only lower case letters Example: paper , rock , scissors\n")
 
 def game():
     """
