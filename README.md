@@ -1,4 +1,4 @@
-#JanKenPo
+# JanKenPo
 
 - JanKenPo is a Python terminal game
 - Users can try beat the computer chosing betweenn Rock Paper and Scissors
@@ -16,7 +16,7 @@ The user can play against the computer by inputting the values on the terminal.
 ######
 The game will tell the player immediatley when win , lose or draw.
 
-## Fratures
+## Features
 ####
 #### Existing Features
 <img alt="Welcome" src="/assets/images/WelcomeScreenshot.JPG" width="80%">
