@@ -86,7 +86,7 @@ def main():
     main function that will call all other ones 
     Ref love sandwichs project 
     """                 
-welcome()           
+welcome()          
 print(game())
 play_again()
       
