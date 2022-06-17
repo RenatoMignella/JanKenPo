@@ -17,7 +17,8 @@ def welcome():
         "Please choose betweenn rock paper and scissors and "
         "challenge the Computer !!\n"
     )
-    print("Please type only lower case letters Example: " "paper , rock , scissors\n")
+    print("Please type only lower case letters Example: " 
+          "paper , rock , scissors\n")
 
 
 def game():

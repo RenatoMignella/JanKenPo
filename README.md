@@ -61,6 +61,7 @@ The game will tell the player immediatley when win , lose or draw.
 <img alt="validation" src="/assets/images/PlayAgainValidation.JPG" width="90%">
 
 ####
+<img alt="validation2" src="/assets/images/InputValidationScreenshot.JPG" width="90%">
 
 ### Testing
 
@@ -78,7 +79,7 @@ I have tested the project doing the following
 
   #### Remain Bugs
 
-- No remain Bugs 
+- No remain Bugs that I'm aware
 
  #### Validator Testing 
  - [PEP8](http://pep8online.com/)
