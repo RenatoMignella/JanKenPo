@@ -99,3 +99,4 @@ I have tested the project doing the following
    - [W3Schools](https://www.w3schools.com/python/python_datetime.asp)
    - [Code Institute](https://www.CodeInstitute.net)
    - [Youtube](https://www.youtube.com/)
+   - [pyfiglet](https://pypi.org/project/pyfiglet/0.7/)
