@@ -1,12 +1,8 @@
 # random imported to generate the random value
-from cmath import e
-from optparse import Values
 import random
-import re
 
 # pyfiglet imported to generate nice interface
 import pyfiglet
-from tomlkit import value
 
 
 def welcome():
@@ -30,16 +26,21 @@ def game():
     and Rules: two equals draw rock beats scissors , scissors beats paper,
     and paper beats rock
     """
-    player = input("The computer has chosen, It's your turn:\n")
-    machine = random.choice(["rock", "paper", "scissors"])
+    while True:
+        player = input("The computer has chosen, It's your turn:\n")
+        machine = random.choice(["rock", "paper", "scissors"])
 
-    if player == machine:
-        return "Result is: Draw !"
+        if validate_input(player):
+            break
 
-    if win_game(player, machine):
-        return "Result is: You win congatulations !!"
+        if player == machine:
+            return "Result is: Draw !"
 
-    return "Result is: You lost sorry.."
+        if win_game(player, machine):
+            return "Result is: You win congatulations !!"
+
+        if lose_game(player, machine):
+            return "Result is: You lost sorry.."
 
 
 def win_game(player1, computer1):
@@ -52,6 +53,20 @@ def win_game(player1, computer1):
         (player1 == "rock" and computer1 == "scissors")
         or (player1 == "scissors" and computer1 == "paper")
         or (player1 == "paper" and computer1 == "rock")
+    ):
+        return True
+
+
+def lose_game(player1, computer1):
+    """
+    It will return true if the player lose
+    rock beats scissors , scissors beats paper ,
+    and paper beats rock
+    """
+    if (
+        (player1 == "scissors" and computer1 == "rock")
+        or (player1 == "paper" and computer1 == "scissors")
+        or (player1 == "rock" and computer1 == "paper")
     ):
         return True
 
@@ -76,7 +91,7 @@ def play_again():
 
 def validate_play_again(values):
     """
-       validation and error checking
+    validation and error checking
     """
     try:
         [str(value) for value in values]
@@ -86,22 +101,19 @@ def validate_play_again(values):
         print(f"Invalid data: {er_r}, please try again.\n")
         return False
 
-# def validade_input(player):
-#     """
-#     this function will validade all awnsers that the use input
 
-#     """
-#     try:
+def validate_input(values):
+    """
+    this function will validade all awnsers that the use input
 
-#         if player != 'rock' and player != 'paper' and player !='scissors':
-#            raise ValueError(
-#                 f"you must to type paper , rock or scissors "
-#             )
-#     except ValueError as e:
-#         print(f"invalid data: {e}, please try again .\n")
-#         return False
-
-#     return True
+    """
+    try:
+        [str(value) for value in values]
+        if values != "rock" and values != "paper" and values != "scissors":
+            raise ValueError(f"you must to type paper , rock or scissors ")
+    except ValueError as e:
+        print(f"invalid data: {e}, please try again .\n")
+        return False
 
 
 def main():
