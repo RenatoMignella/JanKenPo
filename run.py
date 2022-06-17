@@ -1,8 +1,12 @@
 # random imported to generate the random value
+from cmath import e
+from optparse import Values
 import random
+import re
 
 # pyfiglet imported to generate nice interface
 import pyfiglet
+from tomlkit import value
 
 
 def welcome():
@@ -14,11 +18,10 @@ def welcome():
 
     print("Welcome to JanKenPo\n")
     print(
-     "Please choose betweenn rock paper and scissors and "
-     "challenge the Computer !!\n"
+        "Please choose betweenn rock paper and scissors and "
+        "challenge the Computer !!\n"
     )
-    print("Please type only lower case letters Example: "
-          "paper , rock , scissors\n")
+    print("Please type only lower case letters Example: " "paper , rock , scissors\n")
 
 
 def game():
@@ -37,12 +40,6 @@ def game():
         return "Result is: You win congatulations !!"
 
     return "Result is: You lost sorry.."
-
-    # while True:
-
-    #  if validade_input(player):
-    #     print('deu certo')
-    #     break
 
 
 def win_game(player1, computer1):
@@ -66,13 +63,28 @@ def play_again():
 
     while True:
         continu = input("To play again press'r', to finish press 'q'\n")
+
+        if validate_play_again(continu):
+            break
         if continu == "r":
             print(game())
-        else:
+        if continu == "q":
             banner2 = pyfiglet.figlet_format("Thank you for playng !")
             print(banner2)
             break
 
+
+def validate_play_again(values):
+    """
+       validation and error checking
+    """
+    try:
+        [str(value) for value in values]
+        if values != "r" and values != "q":
+            raise ValueError(f"Please only 'r' or 'q' not: {(values)}")
+    except ValueError as er_r:
+        print(f"Invalid data: {er_r}, please try again.\n")
+        return False
 
 # def validade_input(player):
 #     """
