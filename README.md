@@ -56,8 +56,9 @@ The game will tell the player immediatley when win , lose or draw.
 
       ####
 - Input validation and error checking 
-  - 1
-<img alt="validation" src="/assets/images/.JPG" width="90%">
+  - if the player type invalid a input it will be validated
+  ###
+<img alt="validation" src="/assets/images/PlayAgainValidation.JPG" width="90%">
 
 ####
 
@@ -71,8 +72,8 @@ I have tested the project doing the following
 
   #### Bugs
 
-  Solved Bugs
- - Validation problem
+-  Solved Bugs
+   - Validation problem
  
 
   #### Remain Bugs
